@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Scanner;
 
 public class ProgramaAritmetico {
     public static void main(String[] args) {
@@ -41,7 +40,17 @@ public class ProgramaAritmetico {
             intentos++;
         }
 
+        // Calculando el porcentaje de respuestas correctas
+        double porcentajeCorrecto = ((double) aciertos / totalPreguntas) * 100;
+        
+        if (porcentajeCorrecto < 75) {
+            gestorInteraccion.mostrarMensaje("Por favor pide ayuda adicional a tu instructor.");
+        } else {
+            gestorInteraccion.mostrarMensaje("Felicidades, estás listo para pasar al siguiente nivel!");
+        }
+
         entrada.close();
     }
 }
+
 
