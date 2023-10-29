@@ -6,9 +6,16 @@ public class ProgramaAritmetico {
         GestorInteraccion gestorInteraccion = new GestorInteraccion();
 
         gestorInteraccion.mostrarMensaje("Elige el nivel de dificultad: ");
+        gestorInteraccion.mostrarMensaje("1: Números de un dígito");
+        gestorInteraccion.mostrarMensaje("2: Números de dos dígitos");
         int nivelDificultad = entrada.nextInt();
 
         gestorInteraccion.mostrarMensaje("Elige el tipo de problema aritmético: ");
+        gestorInteraccion.mostrarMensaje("1: Suma");
+        gestorInteraccion.mostrarMensaje("2: Resta");
+        gestorInteraccion.mostrarMensaje("3: Multiplicación");
+        gestorInteraccion.mostrarMensaje("4: División");
+        gestorInteraccion.mostrarMensaje("5: Aleatorio");
         int tipoProblema = entrada.nextInt();
 
         OperacionesMatematicas operacionesMatematicas = new OperacionesMatematicas(nivelDificultad, tipoProblema);
