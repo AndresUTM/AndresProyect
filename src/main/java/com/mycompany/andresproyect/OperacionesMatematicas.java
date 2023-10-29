@@ -1,14 +1,14 @@
-import java.util.Random;
+import java.security.SecureRandom;
 
 public class OperacionesMatematicas {
     int nivelDificultad;
     int tipoProblema;
-    Random generador;
+    SecureRandom generador;
 
     public OperacionesMatematicas(int nivelDificultad, int tipoProblema) {
         this.nivelDificultad = nivelDificultad;
         this.tipoProblema = tipoProblema;
-        this.generador = new Random();
+        this.generador = new SecureRandom();
     }
 
     public int[] generarOperandos() {
